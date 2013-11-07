@@ -17,10 +17,10 @@ public interface ClientDAO {
 	
 	/**
 	 * Create new client in the database.
-	 * @param newInfo All fields but the id are used to create the new client record.
+	 * @param clientName Name of the new client.
 	 * @return The id of the client.
 	 */
-	int create(Client newInfo);
+	int create(String clientName);
 	
 	/**
 	 * Search for clients based on their name.

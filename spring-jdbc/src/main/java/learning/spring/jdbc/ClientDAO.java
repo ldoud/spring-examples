@@ -23,6 +23,13 @@ public interface ClientDAO {
 	int create(String clientName);
 	
 	/**
+	 * Find a client given it's id.
+	 * @param clientId Primary key of client.
+	 * @return Null if client isn't found.
+	 */
+	Client findById(int clientId);
+	
+	/**
 	 * Search for clients based on their name.
 	 * @param clientNamePattern May contain wild card patterns.
 	 * @return Non-null list containing zero or more clients.
